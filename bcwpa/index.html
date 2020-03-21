@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<meta name="google-signin-scope" content="profile email">
+<meta name="google-signin-client_id" content="259413867850-2b2vhclnnptuiojr38lb5vcbo81l670g.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BCWPA</title>
+	<meta name="description" content="Blockchain: A decentralized, distributed ledger that records the provenance of a digital asset." />
+	<meta name="keywords" content="blockchain, template, html, css, page stack, 3d, perspective, navigation, menu" />
+  <meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="demo.css" />
+	<link rel="stylesheet" type="text/css" href="component.css" />
+	<script src="modernizr-custom.js"></script>
+</head>
+
+<body>
+	<!-- navigation -->
+
+	<nav class="pages-nav">
+
+		
+		<div class="pages-nav__item"><a class="link link--page" href="#page-home">Home</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-docu">Documentation</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#manual">Manual</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-contact">Contact</a></div>
+		<div class="pages-nav__item pages-nav__item--social">
+			<a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
+			<a class="link link--social link--faded" href="#"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+			<a class="link link--social link--faded" href="#"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+			<a class="link link--social link--faded" href="#"><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+		</div>
+		
+	</nav>
+
+	<!-- /navigation-->
+	<!-- pages stack -->
+	<div class="pages-stack">
+		<!-- page -->
+		<div class="page" id="page-home">
+			<!-- Blueprint header -->
+			<header class="bp-header cf">
+				<span class="bp-header__present">Blockchain Technology <span class="bp-tooltip bp-icon bp-icon--about" data-content="A blockchain is most simply defined as a decentralized, distributed ledger that records the provenance of a digital asset."></span></span>
+				<h1 class="bp-header__title">Whistleblower Protection</h1>
+				<p class="bp-header__desc" ><b>Based on Cryptography </b></p> 
+				<nav class="bp-nav">
+					<a class="bp-nav__item bp-icon bp-icon--prev" href="http://tympanus.net/Blueprints/ZoomSlider/" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+					<!--a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+					<a class="bp-nav__item bp-icon bp-icon--drop" href="http://tympanus.net/codrops/?p=25311" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+					<a class="bp-nav__item bp-icon bp-icon--archive" href="http://tympanus.net/codrops/category/blueprints/" data-info="Blueprints archive"><span>Go to the archive</span></a>
+				</nav>
+			</header>
+
+					<div class="wrapper" align="center">
+<h2>Register For An Account</h2>
+<style>
+
+/*sass variables used*/
+$full:100%;
+$auto:0 auto;
+$align:center;
+
+@mixin disable{
+  outline:none;
+  border:none;
+}
+
+@mixin easeme{
+  -webkit-transition:1s ease;
+  -moz-transition:1s ease;
+  -o-transition:1s ease;
+  -ms-transition:1s ease;
+  transition:1s ease;
+}
+.wrapper{
+  position: absolute;
+  align-content: center; 
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width:280px;
+
+ 
+}
+
+h2{
+  text-align: center;
+  padding:65px 0px 0px 0px;
+  font:24px Oswald;
+  color:#FFF;
+  text-transform:uppercase;
+  text-shadow:#000 0px 1px 5px;
+  margin:0px;
+}
+
+
+p{
+  font:13px Open Sans;
+  color:#6E6E6E;
+  text-shadow:#000 0px 1px 5px;
+  margin-bottom:30px;
+}
+
+.form{
+  width:$full;
+}
+
+input[type="text"],input[type="email"]{
+  width:98%;
+  padding:15px 0px 15px 8px;
+  border-radius:5px;
+  box-shadow:inset 4px 6px 10px -4px rgba(0,0,0,0.3), 0 1px 1px -1px rgba(255,255,255,0.3);
+  background:rgba(0,0,0,0.2);
+  @include disable;
+  border:1px solid rgba(0,0,0,1);
+  margin-bottom:10px;
+  color:#6E6E6E;
+  text-shadow:#000 0px 1px 5px;
+}
+
+
+
+input:focus{
+  box-shadow:inset 4px 6px 10px -4px rgba(0,0,0,0.7), 0 1px 1px -1px rgba(255,255,255,0.3);
+  background:rgba(0,0,0,0.3);
+  @include easeme;
+}
+
+
+.name-help,.email-help{
+  display:none;
+  padding:0px;
+  margin:0px 0px 15px 0px;
+}
+
+.optimize{
+  position:fixed;
+  right:3%;
+  top:0px;
+}
+.main-block { 
+      width: 90%;
+      padding: 10px 0;
+      border-radius: 5px;
+      box-shadow: 1px 1px 8px 2px #666;
+      background: #303136   ;
+      }
+      .block-item {
+      width: 80%;
+      padding: 15px;
+      }
+
+.btn {
+     display: all;
+     padding: 30px;
+      align-items: center;
+      position: absolute;
+      top: 50%
+      width: 100%;
+      height: 40px;
+      margin: 0px 0;
+      outline: none;
+      border: 0;
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px #666;
+      background: #e8e8e8;
+      color: #fff;
+      cursor: pointer; 
+      }
+.btn:hover {
+      transform: scale(1.03);
+      }
+      .btn span {
+      font-size: 16px;
+      }
+      .google{
+      background: #78890;
+      } 
+</style>
+
+
+
+
+  <p>Sign-in below to take a step towards change.</p>
+  <p> Please use valid credentials. 
+  Misinformation will not be entertained.</p>
+  <form class="form" method="post" action="yourpage.html">
+    <input type="text" class="name" placeholder="Name">
+    <div align="center">
+      <p class="name-help">Please enter your first and last name.</p>
+    </div>
+    <div class="main-block">
+    <button onclick="onSignIn()" ><i class="g-signin2" ></i></button>
+    <script>
+        function onSignIn(googleUser) {
+          // Useful data for your client-side scripts:
+          var profile = googleUser.getBasicProfile();
+          console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+          console.log('Full Name: ' + profile.getName());
+          console.log('Given Name: ' + profile.getGivenName());
+          console.log('Family Name: ' + profile.getFamilyName());
+          console.log("Image URL: " + profile.getImageUrl());
+          console.log("Email: " + profile.getEmail());
+
+          // The ID token you need to pass to your backend:
+          var id_token = googleUser.getAuthResponse().id_token;
+          console.log("ID Token: " + id_token);
+        }
+      </script>
+    </div>
+  </form>
+</div>
+		</div>
+		<!-- /page -->
+		<div class="page" id="page-docu">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Documentation</h1>
+				<p class="bp-header__desc">Based on Cryptography  </p>
+				<p class="info">
+					Wanna die.
+				</p>
+			</header>
+		</div>
+		<div class="page" id="manual">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Manual</h1>
+				<p class="bp-header__desc">Based on Cryptography  </p>
+				<p class="info">
+					Gonna die.
+				</p>
+			</header>
+		</div>
+		
+		<div class="page" id="page-contact">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Contact</h1>
+				<p class="bp-header__desc">Based on Cryptography  </p>
+				<p class="info">
+					Ded.
+				</p>
+			</header>
+		</div>
+		
+	</div>
+	<!-- /pages-stack -->
+	<button class="menu-button"><span>Menu</span></button>
+	<script src="classie.js"></script>
+	<script src="main.js"></script>
+	<script type="text/javascript" >
+$(".name").focus(function(){
+  $(".name-help").slideDown(500);
+}).blur(function(){
+  $(".name-help").slideUp(500);
+});
+
+</script>
+<!-- For the demo ad only -->   
+<script src="//tympanus.net/codrops/adpacks/demoad.js"></script>
+</body>
+
+</html>
